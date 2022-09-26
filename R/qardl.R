@@ -26,7 +26,17 @@
 
 qardl<-function(formula,data,maxlag=4,tau=NULL){
   #***************************************
-
+  #* Dr.Taha Zaghdoudi
+  #* Research Assistant, University of Jendouba, Tunisa
+  #* *************************************
+  #* This is an R code for quantile ARDL of
+  #* Cho, J. S., Kim, T. H., & Shin, Y. (2015).
+  #* Quantile cointegration in the autoregressive distributed-lag modeling framework.
+  #* Journal of Econometrics, 188(1), 281-300.
+  #***********************************
+  #* Matlab verison of Sangwoo Park (2020)
+  #* ************************************
+  
   aa<-unlist(as.character(formula))
   lhs   <- aa[[2]]
   core  <- aa[[3]]
